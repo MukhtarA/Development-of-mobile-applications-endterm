@@ -1,12 +1,31 @@
+import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { View, Text, FlatList } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, FlatList,ScrollView } from 'react-native';
+import Card from "../../components/CardComponent";
 
-const RootNavigator = () => {
-    return(
-        <View>
-            <FlatList  />
-        </View>
-    )
+export default function ScheduleScreen() {
+    return (
+        <SafeAreaView style={styles.container}>
+            <StatusBar style="auto" />
+            <ScrollView>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+            </ScrollView>
+        </SafeAreaView>
+    );
 }
 
-export default RootNavigator;
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        paddingVertical: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+});
