@@ -4,11 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 const RootNavigator = () => {
     return(
-        <NavigationContainer>
-            <HomeScreen>
-
-            </HomeScreen>
-        </NavigationContainer>
+        <Text>huh</Text>
     )
 }
 
